@@ -19,7 +19,7 @@ In this post, we'll look at how Sourcegraph created a complete and up-to-date in
 
 ## We indexed all the crates
 
-![A man loading a new crate onto a box of existing crates](https://i.ritzastatic.com/images/c7b16392581342cd9bf5c667ab4f3a99/loading-cargo.png)
+![A man loading a new crate onto a box of existing crates](https://storage.googleapis.com/sourcegraph-assets/blog/cargo-vet-images/loading-cargo.png)
 
 Sourcegraph maintains a complete and precise index of all versions of all available Rust crates. The number has grown since, but back when we first completed our index, the index covered 727,538 versions across 103,939 crates.
 
@@ -49,11 +49,11 @@ Our complete Rust index enables us to create precise code navigation across the 
 
 For instance, clicking on the `Receiver` symbol in the `rust-analyzer` crate on Sourcegraph opens a popup with a link to this struct's definition in the `crossbeam` crate's code.
 
-![Screenshot of Sourcegraph precise code navigation with jump-to-definition across repositories](https://i.ritzastatic.com/images/679830a016014146a5cee957cdbea68d/precise-popup-annotated.png)
+![Screenshot of Sourcegraph precise code navigation with jump-to-definition across repositories](https://storage.googleapis.com/sourcegraph-assets/blog/cargo-vet-images/precise-popup-annotated.png)
 
 Sourcegraph also allows you to list and navigate references to Rust symbols. Continuing our example, when you click on the `Receiver` struct in the `crossbeam` crate's code, you'll see a button to find references to this struct. Click this button to open a list of all the known references to `Receiver`.
 
-![Screenshot of Sourcegraph precise code navigation with references across repositories](https://i.ritzastatic.com/images/3438ae920fb64516a46b0dee08425a8f/references-annotated.png)
+![Screenshot of Sourcegraph precise code navigation with references across repositories](https://storage.googleapis.com/sourcegraph-assets/blog/cargo-vet-images/references-annotated.png)
 
 Precise navigation allows us to accurately link to the exact references and definitions for symbols.
 
@@ -75,7 +75,7 @@ For example:
 2. [Compare changes across versions of `libc`](https://sourcegraph.com/crates/libc/-/compare/...v0.2.138)
 3. [Display crates with a license](https://sourcegraph.com/search?q=context:global+repo:%5Ecrates+repo:contains.file%28LICENSE%29+count:100&patternType=standard&sm=0&groupBy=repo)
 
-![A warehouse showing people packing crates with a counter on the wall showing over 20 billion downloads](https://i.ritzastatic.com/images/495088bec6784c91aa08e37288e26700/vetting-cargo.jpg)
+![A warehouse showing people packing crates with a counter on the wall showing over 20 billion downloads](https://storage.googleapis.com/sourcegraph-assets/blog/cargo-vet-images/vetting-cargo.jpg)
 
 ## Vetting the cargo
 
@@ -115,7 +115,7 @@ cargo vet diff --mode sourcegraph syn 1.0.107 1.0.106
 # (press ENTER/return to open in your browser)
 ```
 
-![Animation showing how to use cargo-vet](https://i.ritzastatic.com/images/1d2a924b5de54505bff8dba6d5a61b6c/cargo-vet.gif)
+![Animation showing how to use cargo-vet](https://storage.googleapis.com/sourcegraph-assets/blog/cargo-vet-images/cargo-vet.gif)
 
 ## Closing thoughts
 
